@@ -61,7 +61,7 @@ Following dependencies must be installed before building the project.
     npm install
  
  and then npm start 
- 
+``` 
 
 Run the database—PostgreSQL for movie database
 Run the Springboot application  -- runs on port 8080
