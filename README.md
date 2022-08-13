@@ -5,7 +5,7 @@ Backend: node, java
 Database: PostgreSQL connecting with java
           MongoDB connecting with node
 
-In the root folder, there are 2 sub folders
+In the root folder, there are sub folders
 1)NetflixBackendJava
 2)NetflixFrontend
       In the NetflixFrontend there are 2 sub folders api for node backend and client for React frontend
