@@ -47,6 +47,10 @@ Controller:
     
 
 # 2)NetflixFrontend
+    Netflix Frontend is developed using React
+
+# 3)node api
+Movies rating api is developed using node.
 Following dependencies must be installed before building the project.
     npm install
  
