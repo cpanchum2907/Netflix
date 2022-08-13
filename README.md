@@ -52,9 +52,13 @@ Controller:
 # 3)node api
 Movies rating api is developed using node.
 Following dependencies must be installed before building the project.
+
+```sh
     npm install
  
  and then npm start 
+ 
+ ```
 
 Run the database—PostgreSQL for movie database
 Run the Springboot application  -- runs on port 8080
