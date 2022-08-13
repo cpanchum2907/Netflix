@@ -70,3 +70,24 @@ Following dependencies must be installed before building the project.
 - Run the frontend yarn start -- runs on port 3000
 - node backend runs on port 8800
 
+# Production build
+**Packaging as jar
+To build the final jar and optimize for production, run:
+./mvnw -Pprod clean verify
+
+**To ensure everything worked, run:
+java -jar target/*.jar
+Then navigate to http://localhost:8080 in your browser.
+
+**Packaging as war
+To package your application as a war in order to deploy it to an application server, run:
+./mvnw -Pprod,war clean verify
+
+**Testing
+To launch your application's tests, run:
+./mvnw verify
+
+**Client tests
+Unit tests  can be run with:
+npm test
+
