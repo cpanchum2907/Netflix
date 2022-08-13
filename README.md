@@ -1,9 +1,10 @@
 ## Netflix-Clone
 # Technologies used:
-Frontend: React
-Backend: node, java
-Database: PostgreSQL connecting with java
-          MongoDB connecting with node
+
+- Frontend: React
+- Backend: node, java
+- Database: PostgreSQL connecting with java
+            MongoDB connecting with node
 
 In the root folder, there are sub folders
 ```sh
