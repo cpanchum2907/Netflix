@@ -8,6 +8,7 @@ Database: PostgreSQL connecting with java
 In the root folder, there are sub folders
 1)NetflixBackendJava
 2)NetflixFrontend
+3)api for node
       In the NetflixFrontend there are 2 sub folders api for node backend and client for React frontend
 
 # 1)NetflixBackendJava:
