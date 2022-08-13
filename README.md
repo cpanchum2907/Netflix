@@ -10,7 +10,7 @@ In the root folder, there are sub folders
 1)NetflixBackendJava
 2)NetflixFrontend
 3)api for node
-```
+
       In the NetflixFrontend there are 2 sub folders api for node backend and client for React frontend
 
 # 1)NetflixBackendJava:
@@ -60,7 +60,6 @@ Following dependencies must be installed before building the project.
  
  and then npm start 
  
- ```
 
 Run the database—PostgreSQL for movie database
 Run the Springboot application  -- runs on port 8080
