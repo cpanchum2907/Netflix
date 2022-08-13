@@ -17,6 +17,7 @@ In the root folder, there are sub folders
       In the NetflixFrontend there are 2 sub folders api for node backend and client for React frontend
 
 # 1)NetflixBackendJava:
+```sh
 Datamodel:
     Address.java
     Contact.java
@@ -50,7 +51,7 @@ Controller:
       SeenMovieController.java
       UserController.java
     
-
+```
 # 2)NetflixFrontend
     Netflix Frontend is developed using React
 
