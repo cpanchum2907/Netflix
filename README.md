@@ -3,7 +3,7 @@
 
 - Frontend: React
 - Backend: node, java
-- Database: PostgreSQL connecting with java
+- Database: PostgreSQL connecting with java and
             MongoDB connecting with node
 
 In the root folder, there are sub folders
