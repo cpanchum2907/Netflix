@@ -10,7 +10,7 @@ In the root folder, there are sub folders
 ```sh
 1)NetflixBackendJava
 2)NetflixFrontend
-3)api for node
+- api for node
 ```
 
 
