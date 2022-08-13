@@ -65,8 +65,8 @@ Following dependencies must be installed before building the project.
  and then npm start 
 ``` 
 
-Run the database—PostgreSQL for movie database
-Run the Springboot application  -- runs on port 8080
-Run the frontend yarn start -- runs on port 3000
-node backend runs on port 8800
+- Run the database—PostgreSQL for movie database
+- Run the Springboot application  -- runs on port 8080
+- Run the frontend yarn start -- runs on port 3000
+- node backend runs on port 8800
 
