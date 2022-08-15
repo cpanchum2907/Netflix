@@ -1,5 +1,6 @@
 package fr.epita.netflix.controller;
 
+import fr.epita.netflix.Configuration.CloakConfiguration;
 import fr.epita.netflix.datamodel.User;
 import fr.epita.netflix.exceptions.BadRequestAlertException;
 import fr.epita.netflix.repository.UserRepository;
@@ -39,6 +40,8 @@ public class UserController {
             throw new BadRequestAlertException("A new user cannot already have an ID");
         } else {
             User newUser = userRepository.createUser(user);
+            CloakConfiguration cloakConfiguration = new CloakConfiguration(user.getLogin(), user.getFirstName(), user.getLastName(), user.getEmail());
+            cloakConfiguration.configuration();
             return ResponseEntity.created(new URI("/netflix/users/" + newUser.getId()))
                     .body(newUser);
         }

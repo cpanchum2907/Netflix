@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import  {checkemail} from '../../services/accounts';
 import {postRegsiter}  from  '../../services/accounts';
 import {login} from '../login/Login'
+import { Message } from 'semantic-ui-react'
 function Register() {
     const [email,setEmail] = useState("")
     const emailRef = useRef()
@@ -32,8 +33,8 @@ function Register() {
         }
       };
 
-    const handleFinish = () =>{
-        setPassword(passwordRef.current.value) 
+    const submitUser = () =>{
+      alert("success");
     }
 
   return (
@@ -45,7 +46,6 @@ function Register() {
                 src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/0/3/0/030dc01da7_50145928_netflix-logo.jpg"
                 alt="">
             </img>
-            
             <Link to='/login'>
                 <button className="loginButton">Sign In</button>
             </Link>
@@ -64,10 +64,10 @@ function Register() {
                 <form className="inputType" onSubmit={handleSubmit}>
                     <input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
                     
-                            <button  className="registerButton">
-                             Start
+                            <button  className="registerButton" onClick={submitUser}>
+                             Submit
                             </button>  
-                       
+                            
                 </form>
             )}
       </div>
