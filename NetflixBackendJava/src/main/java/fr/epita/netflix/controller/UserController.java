@@ -37,7 +37,6 @@ public class UserController {
 
         if (user.getId() != null) {
             throw new BadRequestAlertException("A new user cannot already have an ID");
-            // Lowercase the user login before comparing with database
         } else {
             User newUser = userRepository.createUser(user);
             return ResponseEntity.created(new URI("/netflix/users/" + newUser.getId()))

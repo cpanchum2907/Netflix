@@ -51,6 +51,7 @@ public class NetflixBackendApplication {
 
 
 
+
 	@Bean
 	public UserRepository getUserRepository(SessionFactory sf,
 											UserJPADAO userDao
@@ -73,13 +74,6 @@ public class NetflixBackendApplication {
 	}
 
 	@Bean
-	public MovieUserRepository getMovieUserRepository(SessionFactory sf,
-													  MovieUserJPADAO movieUserDAO
-	){
-		return new MovieUserRepository(sf, movieUserDAO);
-	}
-
-	@Bean
 	public ContactRepository getContactRepository(SessionFactory sf,
 												  ContactJPADAO contactDao
 	){
@@ -87,10 +81,17 @@ public class NetflixBackendApplication {
 	}
 
 	@Bean
-	public SeenMovieRepository getMovieUserRepository(SessionFactory sf,
-													  SeenMovieJPADAO seenMovieDAO
+	public MovieUserRepository getMovieUserRepository(SessionFactory sf,
+													  MovieUserJPADAO movieUserJPADAO
 	){
-		return new SeenMovieRepository(sf, seenMovieDAO);
+		return new MovieUserRepository(sf, movieUserJPADAO);
+	}
+
+	@Bean
+	public SeenMovieRepository getSeenMovieRepository(SessionFactory sf,
+													  SeenMovieJPADAO seenMovieJPADAO
+	){
+		return new SeenMovieRepository(sf, seenMovieJPADAO);
 	}
 
 

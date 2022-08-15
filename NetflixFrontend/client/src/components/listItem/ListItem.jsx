@@ -1,10 +1,18 @@
 import React, { useState } from 'react'
 import "./listItem.scss"
-import {Add, PlayArrow,  ThumbDownOutlined,  ThumbUpOutlined} from '@material-ui/icons'
+import {Add, PlayArrow,  ThumbDownOutlined,  ThumbUpOutlined, ThumbUp} from '@material-ui/icons'
 
 function ListItem({index,item}) {
   const [isHovered,setIsHovered] = useState(false);
   const trailer = "https://www.w3schools.com/html/mov_bbb.mp4"
+  const [like,setLike] = useState(false)
+
+    const [saved,setSaved] = useState(false)
+
+    const saveShow = () => {
+      setLike(!like);
+      setSaved(true);
+    };
   return (
     <div className='listItem' 
       style={{ left: isHovered && index * 225 - 50 + index * 2.5 }}
@@ -21,7 +29,13 @@ function ListItem({index,item}) {
             <div className="icons">
               <PlayArrow className="icon"/>
               <Add className="icon"/>
-              <ThumbUpOutlined className="icon"/>
+              <p onClick={saveShow}>
+                  {like ? (
+                  <ThumbUp className="icon" />
+                  ) : (
+                    <ThumbUpOutlined className="icon" />  
+                  )}
+              </p>
               <ThumbDownOutlined className="icon"/>
             </div>
             <div className="itemInfoTop">
